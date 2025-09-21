@@ -1,0 +1,78 @@
+.mind-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.breathing-circle {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transition: transform 4s ease-in-out;
+}
+
+.breathing-circle.grow {
+    transform: scale(1.5);
+}
+
+.breathing-circle.shrink {
+    transform: scale(1);
+}
+
+#breathingText {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.timer-section {
+    margin: 40px 0;
+}
+#timerDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.timer-controls button {
+    margin: 5px;
+}
+.sound-section button {
+    margin: 5px;
+}
+.btn-pri:hover { 
+    transform: scale(1.05); 
+    transition: 0.3s; 
+}
+.btn-sec:hover { 
+    transform: scale(1.05); 
+    transition: 0.3s; 
+}
+.progress-section {
+    margin: 40px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+section { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: 0.6s; 
+}
+section.show-section { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+@media (max-width: 600px) {
+  .breathing-circle {
+    width: 120px;
+    height: 120px;
+  }
+  #timerDisplay {
+    font-size: 2rem;
+  }
+}
+

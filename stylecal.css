@@ -1,0 +1,183 @@
+.calculator-main{
+    padding: 2rem;
+    max-width: 700px;
+    margin: auto;
+}
+.claculator-section h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.claculator-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+.calculator-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 1rem;
+}
+.calculator-form {
+    flex: 1;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform var(--transition-speed);
+}
+.calculator-form:hover {
+    transform: translateY(-3px);
+}
+.calculate-btn, form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--green);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: background var(--transition-speed), transform 0.2s;
+}
+.calculate-btn:hover, form button[type="submit"]:hover {
+    
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+.calculator-image, .calculator-form {
+    flex:1;
+}
+
+.calculator-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: transform var(--transition-speed);
+}
+.calculator-image img:hover {
+    transform: scale(1.03);
+}
+form{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+form label{
+    display:block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+input[type="number"], select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+input[type="number"]:focus, select:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 6px rgba(40,167,69,0.3);
+    outline: none;
+}
+#activity{
+    width: 250px;
+    padding: 6px;
+}
+.gender-options label{
+    margin-right: 15px;
+    font-weight: normal;
+}
+.calculate-btn{
+    display:block;
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+.calculate-btn:hover{
+    background: #218838;
+}
+.results{
+    margin-top: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.results-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+    max-width: 700px;
+    margin: 2rem auto;
+}
+.results-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.result-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.macro-bar{
+    margin-bottom: 1rem;
+}
+.macro-bar label{
+    font-weight: 500;
+}
+.progress{
+    background: #eee;
+    border-radius: 8px;
+    height: 20px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.progress-fill{
+    background: #28a745;
+    height:100%;
+    width: 0%;
+    border-radius: 8px;
+    transition: width 1s ease-in-out;
+}
+#carbs-bar{
+    background-color: #db8803;
+}
+#protein-bar{
+    background-color: #0060a1;
+}
+#fat-bar{
+    background-color: red;
+}
+
+.hidden{
+    display: none;
+}

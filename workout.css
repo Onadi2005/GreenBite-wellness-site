@@ -1,0 +1,120 @@
+.workout-container{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+
+}
+.workout-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; 
+}
+
+
+.form-side {
+    flex: 1;
+}
+
+
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-side img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+
+.workout-section h1{
+    color: #2eb735;
+    margin-bottom: 10px;
+}
+.workout-section p{
+    color: #070707;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+.form-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+label{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+select{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.btn-pri{
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-pri:hover{
+    background-color: #1b5e20;
+}
+.workout-plan{
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f1f8e9;
+    border-radius: 10px;
+}
+.workout-plan li {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+}
+.workout-plan li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#timeContainer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+
+}
+#timer{
+    font-size: 2em;
+    margin: 15px 0;
+}
+.timer-car-hidden{
+    display: none;
+
+}
+@media (max-width: 768px) {
+    .workout-content {
+        flex-direction: column;
+    }
+
+    .image-side {
+        margin-top: 20px;
+    }
+}

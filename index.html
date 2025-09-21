@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite | HomePage</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script defer src="./utiles.js"></script>
+    <script defer src="./hero.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo GreenBite.jpeg" alt="GreenBite Logo" class="logo-img">
+                GreenBite
+            </div>
+            <button class="hamburger" aria-label="Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./receipes.html">Receipes</a></li>
+                <li><a href="./calculator.html">Calculator</a></li>
+                <li><a href="./workout.html">Workout</a></li>
+                <li><a href="./mindfullness.html">Mindfulness</a></li>
+                <li><a href = "./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h1>Balanced Living Starts From Here!</h1>
+
+        <p id="daily-tip-line" class="tip-section"></p>
+        <div class="slogan-box">
+            <p id="slogan-rotator"></p>
+        </div>
+        <img src="images/basket.png" class="decor float decor-top-left" alt="vegetable">
+        <img src="images/fitness.png" class="decor float decor-bottom-left" alt="exercise">
+        <img src="images/doctor.png" class="decor float decor-bottom-right" alt="doctor">
+
+        </section>
+        <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form id="newsletterform">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="newsletter-msg"></p>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 GreenBite.All rights are reserved.</p>
+    </footer>
+    
+</body>
+</html>
